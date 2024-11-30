@@ -1,0 +1,15 @@
+<div class="menu-container">
+    <h1>Menu</h1>
+    <div class="menu-grid">
+      <div *ngFor="let item of menuItems" class="menu-item">
+        <img [src]="item.image" alt="{{ item.name }}" class="menu-item-image" />
+        <h3 class="menu-item-title">{{ item.name }}</h3>
+        <p class="menu-item-description">{{ item.description }}</p>
+        <div class="menu-item-footer">
+          <span class="menu-item-price">$ {{ item.price }}</span>
+          <span class="menu-item-category">{{ item.category }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
